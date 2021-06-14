@@ -1,0 +1,81 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Overberg unisex beauty salon</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'home/dist/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'home/cover.css' %}" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <header class="masthead clearfix">
+            <div class="inner">
+              <h5 id="msgNO" class="masthead-brand">Contact Us On WhatsApp: <br><small>074 194 0917</small></h5>
+              <nav class="nav nav-masthead">
+                <a class="nav-link active" href="{% url 'home-page' %}">Home</a>
+                <a class="nav-link" href="{% url 'portfolio-page' %}">Portfolio</a>
+                <a class="nav-link" href="{% url 'price-page' %}">Pricing</a>
+                <a class="nav-link" href="{% url 'product-page' %}">Products</a>
+              </nav>
+            </div>
+          </header>
+
+          <main role="main" class="inner cover">
+            <h1 id="coverHeading" class="cover-heading">Overberg Unisex Beauty Salon.</h1>
+            <p class="lead"></p>
+            <p class="lead">
+              <a href="{% url 'contact-page' %}" class="btn btn-lg btn-secondary">Contact</a>
+            </p>
+          </main>
+
+          <footer class="mastfoot">
+            <div class="inner">
+            <div class="socialInfo">
+              <h5 id="SMHeader">Social Media</h5>
+              <hr>
+              <img class="InstagramDiv" src="http://pluspng.com/img-png/instagram-png-instagram-png-logo-1455.png">
+              <img class="FacebookDiv" src="https://icon-library.net/images/facebook-icon-hd/facebook-icon-hd-20.jpg">
+              
+            </div>
+
+            <!--- DESIGN BRAND --->
+            <div class="designBrand">
+              <small><Strong>Powered by: kegan overberg</Strong></small>
+            </div>
+            </div>
+          </footer>
+          
+        </div>
+        
+      </div>
+      
+
+    </div>
+    
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="{% static "home/assets/js/vendor/jquery-slim.min.js" %}"><\/script>')</script>
+    <script src="{% static 'home/assets/js/vendor/popper.min.js' %}"></script>
+    <script src="{% static 'home/dist/js/bootstrap.min.js' %}"></script>
+  </body>
+</html>

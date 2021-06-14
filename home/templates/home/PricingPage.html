@@ -1,0 +1,144 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--- stylesheet boostrap path --->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+
+    <meta charset="UTF-8">
+    <title>Overberg unisex beauty salon | Pricing</title>
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'home/pricing_style.css' %}" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="nav nav-pills flex-column flex-sm-row">
+        <a id="navTextColor" class="flex-sm-fill text-sm-center nav-link" href="{% url 'home-page' %}"><b>Home</b></a>
+        <a id="navTextColor" class="flex-sm-fill text-sm-center nav-link" href="{% url 'portfolio-page' %}"><b>Portfolio</b></a>
+        <a id="activeBar" class="flex-sm-fill text-sm-center nav-link active" href="{% url 'price-page' %}"><b>Pricing</b></a>
+        <a id="navTextColor" class="flex-sm-fill text-sm-center nav-link" href="{% url 'product-page' %}"><b>Products</b></a>
+    </nav>
+
+
+    <div class="container-fluid">
+
+        <div class="HeaderDiv">
+            <h2 id="headerPort"><Strong>Pricing</Strong><h2>
+            <hr>
+        </div>
+
+
+                                    <!--- PRICING LIST --->
+        <div class="listDiv">            
+            <table class="table table-striped table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Ladies</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Men</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                        <td>Wet Cut</td>
+                        <td>R70</td>
+                        <td>Wet Cut</td>
+                        <td>R60</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                        <td>Wash, Cut & Blow</td>
+                        <td>R170</td>
+                        <td>Wash, Cut & Blow</td>
+                        <td>R150</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                        <td>Oil treatments & wash & blow</td>
+                        <td>R200</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                        <td>Tints short hair</td>
+                        <td>R290 - R300</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                        <td>Tints long hair</td>
+                        <td>R300 - R400</td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                        <td>HiLites Full Head</td>
+                        <td>R300</td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                        <td>Botox, Wash & Blow</td>
+                        <td>R350</td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                        <td>Brasil Treatments Short Hair</td>
+                        <td>R550 - R650</td>
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                        <td>Brasil Treatments Long Hair</td>
+                        <td>R650 - R750</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>        
+
+    </div>
+
+
+    
+        <div id="divBar" class="container-fluid">
+        <div id="personalDivInfo" class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="infoStyle">
+                        <h5 class="socialHeader">Contact</h5>
+                        <hr class="seperater">
+                        <p><Strong id="contactInfoHeader" class="infoSpace">Email: </Strong><small>carmendoyle@5Gmail.com</small></p>
+                        <p><Strong id="contactInfoHeader" class="infoSpace">WhatsApp: </Strong><small>074 194 0917</small></p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="infoStyle">
+                        <h5 class="socialHeader">Social Media</h5>
+                        <hr class="seperater">
+                        <img class="InstagramDiv" src="http://pluspng.com/img-png/instagram-png-instagram-png-logo-1455.png">
+                        <img class="FacebookDiv" src="https://icon-library.net/images/facebook-icon-hd/facebook-icon-hd-20.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="designBrand">
+            <hr>
+            <small class="text-muted"><Strong>Powered by: kegan overberg</Strong></small>
+        </div> 
+
+        </div>
+
+
+
+
+    <!--- BOOTSTRAP CORE JAVASCRIPT PATH --->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

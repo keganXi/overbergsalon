@@ -1,0 +1,90 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!--- stylesheet boostrap path --->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+
+    <meta charset="UTF-8">
+    <title>Overberg unisex beauty salon | Contact Us</title>
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'home/Contact_style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav nav-pills flex-column flex-sm-row">
+        <a id="navTextColor" class="flex-sm-fill text-sm-center nav-link" href="{% url 'home-page' %}"><b>Home</b></a>
+        <a id="navTextColor" class="flex-sm-fill text-sm-center nav-link" href="{% url 'portfolio-page' %}"><b>Portfolio</b></a>
+        <a id="navTextColor" class="flex-sm-fill text-sm-center nav-link" href="{% url 'price-page' %}"><b>Pricing</b></a>
+        <a id="navTextColor" class="flex-sm-fill text-sm-center nav-link" href="{% url 'product-page' %}"><b>Products</b></a>
+    </nav>
+
+
+    <div class="container-fluid">
+
+        <div class="HeaderDiv">
+            <h2 id="headerPort"><Strong>Contact Us</Strong></h2>
+            <hr>
+        </div>
+
+
+    </div>
+
+
+
+    <div id="formDivHolder" class="container">
+        <div class="row">
+            <div class='col 112'>
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button class="btn btn-dark" type="submit">Send</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    
+        <div id="divBar" class="container-fluid">
+        <div id="personalDivInfo" class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="infoStyle">
+                        <h5 class="socialHeader">Contact</h5>
+                        <hr class="seperater">
+                        <p><Strong class="infoSpace">Email: </Strong><small>carmendoyle@5Gmail.com</small></p>
+                        <p><Strong class="infoSpace">WhatsApp: </Strong>074 194 0917<small></small></p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="infoStyle">
+                        <h5 class="socialHeader">Social Media</h5>
+                        <hr class="seperater">
+                        <img class="InstagramDiv" src="http://pluspng.com/img-png/instagram-png-instagram-png-logo-1455.png">
+                        <img class="FacebookDiv" src="https://icon-library.net/images/facebook-icon-hd/facebook-icon-hd-20.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="designBrand">
+            <hr>
+            <small class="text-muted"><Strong>Powered by: kegan overberg</Strong></small>
+        </div>
+
+
+    <!--- BOOTSTRAP CORE JAVASCRIPT PATH --->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

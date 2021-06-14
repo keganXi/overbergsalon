@@ -1,0 +1,122 @@
+/* CUSTOM PRODUCT PAGE CSS STYLESHEETS */
+
+
+body{
+    background-image: url("https://www.samaa.tv/wp-content/uploads/2017/08/how-to-get-healthy-hair.jpg");
+
+}
+
+.HeaderDiv{
+    margin-top: 5%;
+    text-align: center;
+    color: White;
+}
+
+
+#navTextColor{
+    color: White;
+}
+
+#activeBar{
+    background-color: grey;
+
+}
+
+
+#carouselDiv{
+    height: 450px;
+}
+
+
+@media (min-width: 840px){
+    #carouselExampleFade{
+        width: 600px;
+        margin-left: 25%;
+
+    }
+}
+
+
+@media (max-width: 840px){
+    #carouselExampleFade{
+        height: 250px auto;
+    }
+}
+
+
+.InstagramDiv{
+    width: 30px;
+    height: 30px;
+    margin-right: 1%;
+    margin-left: 2%;
+  }
+  
+  
+  .FacebookDiv{
+    width: 42px;
+    height: 42px;
+    margin-left: 1%;
+  }
+
+
+  #personalDivInfo{
+    margin-top: 7%;
+  }
+  
+  
+  .infoStyle{
+    color: White;
+  }
+
+  .designBrand{
+    margin-top: 3%;
+    padding-bottom: 1%;
+    text-align: center;
+  }
+
+
+  .seperater{
+    margin-bottom: 2%;
+  }
+
+
+  .infoSpace{
+    margin-right: 2%;
+  }
+
+
+  #divBar{
+    position: absolute;
+    margin-top: 10%;
+    width: 100%;
+    Background-color: #1B1B1B;
+  }
+
+  @media (min-width: 600px){
+    #formDivHolder{
+        margin-left: 35%;
+        margin-top: 10%;
+        color: White;
+    }
+  }
+
+
+  #formDivHolder{
+    color: White;
+}
+
+
+@media (max-width: 380px){
+  #headerPort{
+    font-size: 25px;
+  }
+}
+
+
+@media (max-width: 380px){
+  .socialHeader{
+    font-size: 18px;
+  }
+}
+
+
